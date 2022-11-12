@@ -1,0 +1,188 @@
+.form-play__up {
+  display: none;
+}
+.form-play__down {
+  display: none;
+}
+
+.red__border {
+  border: 1px solid red;
+}
+.form__component {
+  min-width: 50%;
+}
+.form__component .frame {
+  background-color: #f8ceca;
+  width: 8px;
+  height: 100vh;
+}
+.form__component .content {
+  width: 100%;
+}
+.form__component .content .logo {
+  margin-top: 46px;
+  margin-left: 38px;
+}
+.form__component .content .form__content {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.form__component .content .form__content .form__text h1 {
+  font-family: var(--OpenSans);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 35px;
+  color: var(--boldBlue);
+}
+.form__component .content .form__content .form__text h6 {
+  font-family: var(--OpenSans);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 23px;
+  color: var(--boldBlue);
+  margin-top: 11px;
+}
+.form__component .content .form__content form {
+  margin-top: 35px;
+}
+.form__component .content .form__content form p {
+  font-size: 14px;
+}
+.form__component .content .form__content form h6 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--black);
+  margin-bottom: 11px;
+}
+
+.form__component .content .form__content form h6:nth-child(3) {
+  margin-top: 30px;
+}
+
+/* Checking*/
+
+.form__component .content .form__content form .check__content {
+  margin-top: 30px;
+}
+
+.form__component .content .form__content form .check__content input {
+  cursor: pointer;
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.form__component .content .form__content form .check__content label {
+  cursor: pointer;
+  display: flex;
+}
+
+.form__component .content .form__content form .check__content label::before {
+  content: "";
+  border: 1px solid #c1c1c1;
+  width: 30px;
+  height: 20px;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+}
+
+.form__component
+  .content
+  .form__content
+  form
+  .check__content
+  input[type="checkbox"]:checked
+  + label::before {
+  content: "\002713";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--orange);
+  color: white;
+}
+
+/* Checking*/
+
+.form__component .content .form__content form button {
+  width: 100%;
+  border: 0;
+  margin-top: 37px;
+  background-color: var(--orange);
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+.form__component .content .form__content form button a {
+  text-decoration: none;
+  color: white;
+}
+.form__component .content .form__content form button:disabled {
+  opacity: 0.8;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1060px) {
+  .form__component {
+    min-width: 100%;
+  }
+  .form-play__up {
+    display: flex;
+  }
+  .form-play__up h1 {
+    font-family: "Roboto";
+    color: var(--black);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 63px;
+    margin: 0 auto;
+    margin-top: 160px;
+  }
+  .form-play__up h1 span {
+    background-image: url("../../images/layer.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .form-play__down {
+    display: block;
+    margin-top: 70px;
+    width: 100%;
+    height: 50vh;
+  }
+  .form-play__down img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .form-play__up h1 {
+    font-size: 29px;
+    margin-top: 60px;
+  }
+  .form__component .content .form__content .form__text h1 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .form__component .content .form__content .form__text h6 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .form__component .content .form__content {
+    max-width: 290px;
+  }
+}
+/* Responsive */
